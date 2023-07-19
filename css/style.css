@@ -1,0 +1,258 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8fafb; }
+
+p {
+  color: #b3b3b3;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", sans-serif; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+a:hover {
+  text-decoration: none !important; }
+
+.content {
+  padding: 7rem 0;
+  /* background-color: rgba(155, 154, 154, 0.658);*/
+  /* background: rgb(15,11,78);
+  background: linear-gradient(90deg, rgba(15,11,78,1) 0%, rgba(155,154,154,1) 35%, rgba(66,161,180,1) 100%); */
+  /* background: rgb(102,127,177);
+background: linear-gradient(90deg, rgba(102,127,177,1) 0%, rgba(155,154,154,1) 50%, rgba(78,153,168,1) 100%); */
+/* background: rgb(37,92,173);
+background: linear-gradient(90deg, rgba(37,92,173,1) 0%, rgba(155,154,154,1) 100%); */
+/* background: rgb(37,92,173);
+background: linear-gradient(90deg, rgba(37,92,173,1) 0%, rgba(212,229,255,1) 100%); */
+background: rgb(71,124,200);
+background: linear-gradient(90deg, rgba(71,124,200,1) 0%, rgba(212,229,255,1) 100%);
+}
+
+h2 {
+  font-size: 20px; }
+
+.form-block {
+  /* background-color: #f7efef; */
+  background-color: #ffffff;
+  padding: 80px 60px 60px 60px;
+  /* -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  /* box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px; */
+  border-radius: 8px;
+  /* box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);  */
+  position: relative;
+}
+@media (max-width: 991.98px) {
+  .form-block {
+    padding: 60px 30px 30px 30px; } }
+
+@media (max-width: 991.98px) {
+  .content .bg {
+    height: 500px; } }
+
+.content .contents, .content .bg {
+  width: 50%; }
+
+@media (max-width: 1199.98px) {
+  .content .contents, .content .bg {
+      width: 100%; } 
+}
+  
+.content .contents .form-group, .content .bg .form-group {
+    position: relative; }
+.content .contents .form-group label, .content .bg .form-group label {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+.content .contents .form-group input, .content .bg .form-group input {
+  background: transparent;
+  border-bottom: 1px solid #ccc; }
+.content .contents .form-group.first, .content .bg .form-group.first {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px; }
+.content .contents .form-group.last, .content .bg .form-group.last {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px; }
+.content .contents .form-group label, .content .bg .form-group label {
+  font-size: 12px;
+  display: flex;
+  margin-bottom: 0;
+  color: #b3b3b3; }
+
+  .form-group label>i{
+    margin-right: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-group label>i::before{
+    height: 100%;
+  }
+
+.content .contents .form-group.focus, .content .bg .form-group.focus {
+  background: #fff; }
+.content .contents .form-group.field--not-empty label, .content .bg .form-group.field--not-empty label {
+  margin-top: -25px; }
+.content .contents .form-control, .content .bg .form-control {
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  border-radius: 0; }
+.content .contents .form-control:active, .content .contents .form-control:focus, .content .bg .form-control:active, .content .bg .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.content .bg {
+  background-size: cover;
+  background-position: center; }
+
+.content a {
+  color: #888;
+  text-decoration: underline; }
+
+.content .btn {
+  height: 54px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.content .btn-pill {
+  border-radius: 30px; }
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px; }
+
+.control .caption {
+  position: relative;
+  top: .2rem;
+  color: #888; }
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+  border-radius: 4px;
+  transition: all .2s ease; }
+
+.control--radio .control__indicator {
+  border-radius: 50%; }
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc; }
+
+.control input:checked ~ .control__indicator {
+  background: #255cad; }
+
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.9;
+  pointer-events: none; }
+
+.control__indicator:after {
+  font-family: 'icomoon';
+  content: '\e5ca';
+  position: absolute;
+  display: none;
+  font-size: 16px;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+
+.control input:checked ~ .control__indicator:after {
+  display: block;
+  color: #fff; }
+
+.control--checkbox .control__indicator:after {
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b; }
+
+.control--checkbox input:disabled:checked ~ .control__indicator {
+  background-color: #7e0cf5;
+  opacity: .2; }
+
+.btnCustom{
+  background-color: #255cad;
+  transition: all .3s ease;
+  &:hover{
+    background-color: #255cad;
+    transform: scale(1.02);
+  }
+}
+
+.password-toggle{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  &:hover{
+    cursor: pointer;
+  }
+  >i{
+    color: #255cad;
+  }
+}
+
+.bigUserIcon{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  /* background: rgb(255,255,255); */
+  /* background: radial-gradient(circle, rgba(255,255,255,1) 42%, rgba(255,255,255,0) 100%); */
+  /* border-radius: 50%; */
+}
+
+.bigUserIcon  i{
+  font-size: 120px;
+  color: #255cad;
+  fill: #fff;
+  z-index: 4;
+}
+
+.form-block h3{
+  text-align: center;
+}
+
+.colorCirc{
+  background-color: white;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 50%;
+}
